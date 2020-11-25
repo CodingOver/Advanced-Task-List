@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <form id="task-form" >
+      <p>Task List</p>
+      <input type="text" placeholder="New Task" id="task" autocomplete="off">
+      <span class="error">Please Add Your Task First</span>
+      <button type="submit" class="add-btn">Add Task</button> 
+    </form>
+    <div class="card-action">
+      <p>Tasks </p>
+      <input type="text" placeholder="Filter Tasks" id="filter">
+      <ul class="collection"></ul>
+      <button class="clear-task">Clear Tasks</button>
+    </div>
+  </div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

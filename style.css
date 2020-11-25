@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.app{
+    width: 600px;
+    border: 1px solid #cccccc;
+    border-bottom: 3px solid #CCC;
+    padding: 10px;
+    margin: 30px auto;
+    
+}
+#task-form{
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+#task-form p, .card-action p{
+    font-size: 18px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    color: #757070;
+    font-weight: 300;
+}
+#task-form .error{
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: rgb(246, 8, 8);
+    display: none;
+
+}
+#task-form input, .card-action input{
+    display: block;
+    border: none;
+    outline: none;
+    width: 400px;
+    border-bottom: 1px solid rgb(133, 133, 133);
+    margin-bottom: 15px;
+    padding: 7px 0;
+}
+#task-form input::placeholder{
+    color: rgba(133, 133, 133, 0.918);
+}
+#task-form .add-btn, .card-action .clear-task{
+    border: none;
+    outline: none;
+    background: #1c989b;
+    padding: 8px;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 110px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #0a5e5f;
+}
+#task-form .add-btn:hover{
+    background: #1b8688;
+}
+
+.card-action{
+    margin: 10px;
+}
+.card-action p{
+    color: rgba(29, 28, 28, 0.918);
+    font-weight: 400;
+}
+.card-action .clear-task{
+    background: #000;
+    width: 150px;
+    box-shadow: none;
+    margin-top: 15px;
+}
+.card-action .clear-task:hover{
+    background: rgba(17, 17, 17, 0.918);
+}
+.collection-item{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid rgba(224, 224, 224, 0.801);
+    border-bottom: none;
+    width: 400px;
+    color: #1B8688;
+    cursor: pointer;
+}
+.doneTaskItem{
+    text-decoration-line: line-through;
+}
+.collection-item .delete-item{
+    float: right;
+}
+.collection-item:last-child{
+    border-bottom: 1px solid rgba(224, 224, 224, 0.801);
+}
+.collection-item .delete-item{
+    cursor: pointer;   
+}
+.collection-item .delete-item:hover{
+    color: rgb(238, 9, 142);
+}
+/* Responsive */
+@media (max-width: 500px){
+    .app{
+        width: 400px;   
+    }
+    #task-form input, .card-action input,  .collection-item{
+        
+        width: 340px;  
+    }
+}
