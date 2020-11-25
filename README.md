@@ -6,4 +6,3 @@ See the Pen <a href='https://codepen.io/codingover/pen/gOwYqMQ'>Advanced Task Li
   Advanced Task List With Vanilla JavaScript</a> by Ayoub Fellat (<a href="https://codepen.io/codingover">@codingover</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
